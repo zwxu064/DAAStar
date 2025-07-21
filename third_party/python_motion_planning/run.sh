@@ -1,0 +1,1 @@
+python example/global_example.py > logs/run.txt 2>&1 &

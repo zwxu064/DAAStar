@@ -1,0 +1,72 @@
+# Config for method:
+# dijkstra, a_star, theta_star (only for mpd, tmpd, street, aug_tmpd),
+# transpath, daa_path, daa_weight, daa_mask (only for aug_tmpd)
+# randomwalk_3, daa_min, daa_max, daa_mix.
+#
+# For eval.py, set either or both dataset_name and method as null,
+# it will run all datasets and methods.
+# For train.py, specify the values instead of null.
+dataset_name: "tmpd"   # mpd/tmpd/street/aug_tmpd/warcraft/pkmn/sdd_inter/sdd_intra/null
+method: "daa_mix"      # read the above carefully, some methods are for specific dataset,
+                       # such as daa_path/daa_weight/daa_mask/transpath for aug_tmpd
+
+seed: null
+eval_seed: 0
+dataset_dir: "./datasets"
+dataset_file_name: null      # used by default for mpd and sdd_inter which have multiple subsets
+log_root: "./model_weights"
+resume_root: "./model_weights"
+enable_resume: False         # enable only for evaluation
+Tmax: 0.25                   # for training only; otherwise, it will automatically be 1.0 for path validilty
+g_ratio: 0.5                 # if enable_train_g_ratio=True, g_ratio will be 0.5 internally
+tb_factor: 0.001
+logger: "wandb"              # "" to disable wandb; "wandb" to enable it
+
+# TransPath
+transpath:
+  mode: null
+  enable_diag_astar: True    # True for f mode of transpath; False use vanilla A star
+  enable_gt_ppm: False       # True: use binary PPM; otherwise from Transformer learning
+  pretrained_model_path: "./model_weights/transpath/weights/focal.pth"  # use TransPath official weights for comparison
+  save_dir: "./results/transpath"
+
+motion_planning_lib:
+  save_solution: False       # create GT path for binary maps, old one has zig-zag, will turn off vanilla a star for speedup
+  save_dir: "./results/motion_planning_solutions"
+
+sdd:
+  hardness_threshold: 1.0    # only for train
+
+encoder:
+  input: null                # "rgb+" for sdd and "m+" for the others
+  arch: null
+  depth: null
+  const: null                # 10 for sdd and 1 for the others
+
+# Initialize for training angle (radius, 0~pi)
+# If enable_train_rotation_const=True, rotation.const will be 0.5 internally;
+# if pretrained model cannot be loaded, change const to 1.0 as used before.
+rotation:
+  const: 0.5
+
+# If normalize over heristic, it may turn into Dijkstra
+heuristic:
+  const: 1.0
+  enable_norm_heuristic: False
+
+params:
+  batch_size: null
+  num_epochs: null           # default in train.py automatically. 400 for mpd; 400 for tmpd and others
+  lr: null
+
+hydra:
+  job:
+    chdir: False
+
+# Only when enable_vastar_gt is True,
+# this provides GT term weights: g_ratio and rotation.const
+vastar_gt_config:
+  g_ratio: 0.5               # [0, 1] bounded by sigmoid
+
+  rotation:
+    const: 0.0               # [0, 1] bounded by sigmoid
