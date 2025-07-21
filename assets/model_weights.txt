@@ -1,0 +1,859 @@
+model_weights
+├── seed0
+│   ├── daa_mask
+│   │   └── aug_tmpd
+│   │       └── transpath
+│   │           └── Unet
+│   │               └── Enconst10.000_pid180960
+│   │                   └── DAA_aug_tmpd
+│   │                       └── 6j43bvj6
+│   │                           └── checkpoints
+│   │                               └── epoch=45-step=354752.ckpt
+│   ├── daa_max
+│   │   ├── aug_tmpd
+│   │   │   └── transpath
+│   │   │       └── Unet
+│   │   │           └── Enconst10.000_pid74747
+│   │   │               └── DAA_aug_tmpd
+│   │   │                   └── 5elzupfu
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=43-step=339328.ckpt
+│   │   ├── mpd
+│   │   │   ├── alternating_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── yg9k5st2
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=112-step=1469.ckpt
+│   │   │   ├── bugtrap_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── 7yb2fdze
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=45-step=598.ckpt
+│   │   │   ├── forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── yot00tzm
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=39-step=520.ckpt
+│   │   │   ├── gaps_and_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── 17g9sbac
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=304-step=3965.ckpt
+│   │   │   ├── mazes_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── opjt88qq
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=71-step=936.ckpt
+│   │   │   ├── multiple_bugtraps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── ra4lajd4
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=80-step=1053.ckpt
+│   │   │   ├── shifting_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2105007
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── oxcr3rck
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=170-step=2223.ckpt
+│   │   │   └── single_bugtrap_032_moore_c8
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid2105007
+│   │   │               └── DAA_mpd
+│   │   │                   └── eg7irmhm
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=139-step=1820.ckpt
+│   │   ├── pkmn
+│   │   │   └── game
+│   │   │       └── CNNDownSize
+│   │   │           └── Enconst10.000_pid2522391
+│   │   │               └── DAA_pkmn
+│   │   │                   └── 840sg9sa
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=30-step=5828.ckpt
+│   │   ├── sdd_inter
+│   │   │   └── s064_0.5_128_300
+│   │   │       ├── bookstore
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── ztpn5268
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=45-step=5106.ckpt
+│   │   │       ├── coupa
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 4kf3ysr3
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=33-step=4284.ckpt
+│   │   │       ├── deathCircle
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── txupxk16
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=36-step=3478.ckpt
+│   │   │       ├── gates
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── k70yd838
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=34-step=3955.ckpt
+│   │   │       ├── hyang
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── aynqktsu
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=48-step=5096.ckpt
+│   │   │       ├── little
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 5wz7ye56
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=21-step=2662.ckpt
+│   │   │       ├── nexus
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1941105
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── qqp2u40b
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=33-step=3910.ckpt
+│   │   │       └── quad
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid1941105
+│   │   │                   └── DAA_sdd_inter
+│   │   │                       └── c9vgic1d
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=45-step=5980.ckpt
+│   │   ├── sdd_intra
+│   │   │   └── s064_0.5_128_300
+│   │   │       └── video0
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid882256
+│   │   │                   └── DAA_sdd_intra
+│   │   │                       └── p4ils4s7
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=60-step=6527.ckpt
+│   │   ├── street
+│   │   │   └── mixed_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1709066
+│   │   │               └── DAA_street
+│   │   │                   └── iriyzhr6
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=381-step=19100.ckpt
+│   │   ├── tmpd
+│   │   │   └── all_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1667401
+│   │   │               └── DAA_tmpd
+│   │   │                   └── e5hp8vbi
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=377-step=18900.ckpt
+│   │   └── warcraft
+│   │       └── game
+│   │           └── CNNDownSize
+│   │               └── Enconst10.000_pid2233760
+│   │                   └── DAA_warcraft
+│   │                       └── wotn9fws
+│   │                           └── checkpoints
+│   │                               └── epoch=13-step=8750.ckpt
+│   ├── daa_min
+│   │   ├── aug_tmpd
+│   │   │   └── transpath
+│   │   │       └── Unet
+│   │   │           └── Enconst10.000_pid74672
+│   │   │               └── DAA_aug_tmpd
+│   │   │                   └── wke52lop
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=36-step=285344.ckpt
+│   │   ├── mpd
+│   │   │   ├── alternating_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── zmjkjsfn
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=114-step=1495.ckpt
+│   │   │   ├── bugtrap_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── yf2qg68x
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=180-step=2353.ckpt
+│   │   │   ├── forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── gdmhezjr
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=90-step=1183.ckpt
+│   │   │   ├── gaps_and_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── hqqps710
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=75-step=988.ckpt
+│   │   │   ├── mazes_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── 6whouwit
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=138-step=1807.ckpt
+│   │   │   ├── multiple_bugtraps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── tsfndrqg
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=162-step=2119.ckpt
+│   │   │   ├── shifting_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid1133042
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── grwfe1wk
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=250-step=3263.ckpt
+│   │   │   └── single_bugtrap_032_moore_c8
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1133042
+│   │   │               └── DAA_mpd
+│   │   │                   └── x3c3dkaa
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=283-step=3692.ckpt
+│   │   ├── pkmn
+│   │   │   └── game
+│   │   │       └── CNNDownSize
+│   │   │           └── Enconst10.000_pid2522491
+│   │   │               └── DAA_pkmn
+│   │   │                   └── xxvuo35c
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=23-step=4512.ckpt
+│   │   ├── sdd_inter
+│   │   │   └── s064_0.5_128_300
+│   │   │       ├── bookstore
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 02a4jjz6
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=49-step=5550.ckpt
+│   │   │       ├── coupa
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── jymvdmzf
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=37-step=4788.ckpt
+│   │   │       ├── deathCircle
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── zcuwzdm9
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=48-step=4606.ckpt
+│   │   │       ├── gates
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── fnph5bxl
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=45-step=5198.ckpt
+│   │   │       ├── hyang
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── yi5yvgxr
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=48-step=5096.ckpt
+│   │   │       ├── little
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 67z7joqj
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=35-step=4356.ckpt
+│   │   │       ├── nexus
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid1940893
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 8illccri
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=42-step=4945.ckpt
+│   │   │       └── quad
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid1940893
+│   │   │                   └── DAA_sdd_inter
+│   │   │                       └── g59oesco
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=8-step=1170.ckpt
+│   │   ├── sdd_intra
+│   │   │   └── s064_0.5_128_300
+│   │   │       └── video0
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid247114
+│   │   │                   └── DAA_sdd_intra
+│   │   │                       └── zlbpz3c1
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=120-step=12947.ckpt
+│   │   ├── street
+│   │   │   └── mixed_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1465710
+│   │   │               └── DAA_street
+│   │   │                   └── z1mq0zx5
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=398-step=19950.ckpt
+│   │   ├── tmpd
+│   │   │   └── all_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1299385
+│   │   │               └── DAA_tmpd
+│   │   │                   └── d0ye5zle
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=149-step=7500.ckpt
+│   │   └── warcraft
+│   │       └── game
+│   │           └── CNNDownSize
+│   │               └── Enconst10.000_pid2347440
+│   │                   └── DAA_warcraft
+│   │                       └── 52l0drrt
+│   │                           └── checkpoints
+│   │                               └── epoch=10-step=6875.ckpt
+│   ├── daa_mix
+│   │   ├── aug_tmpd
+│   │   │   └── transpath
+│   │   │       └── Unet
+│   │   │           └── Enconst10.000_pid1341357
+│   │   │               └── DAA_aug_tmpd
+│   │   │                   └── ekkt8z0s
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=44-step=347040.ckpt
+│   │   ├── mpd
+│   │   │   ├── alternating_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── dej0ki41
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=313-step=4082.ckpt
+│   │   │   ├── bugtrap_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── hc81u2wd
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=126-step=1651.ckpt
+│   │   │   ├── forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── n3ofq3xd
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=67-step=884.ckpt
+│   │   │   ├── gaps_and_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── ruom8pc1
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=228-step=2977.ckpt
+│   │   │   ├── mazes_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── oq30c96v
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=245-step=3198.ckpt
+│   │   │   ├── multiple_bugtraps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── lar37var
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=374-step=4875.ckpt
+│   │   │   ├── shifting_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343143
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── ulsrt5zg
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=347-step=4524.ckpt
+│   │   │   └── single_bugtrap_032_moore_c8
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid2343143
+│   │   │               └── DAA_mpd
+│   │   │                   └── 72c9jx5q
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=322-step=4199.ckpt
+│   │   ├── pkmn
+│   │   │   └── game
+│   │   │       └── CNNDownSize
+│   │   │           └── Enconst10.000_pid2363425
+│   │   │               └── DAA_pkmn
+│   │   │                   └── 8fowg23x
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=28-step=5452.ckpt
+│   │   ├── sdd_inter
+│   │   │   └── s064_0.5_128_300
+│   │   │       ├── bookstore
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── shl3rpjc
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=41-step=4662.ckpt
+│   │   │       ├── coupa
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 38ea25fj
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=26-step=3402.ckpt
+│   │   │       ├── deathCircle
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── cs3mgphc
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=25-step=2444.ckpt
+│   │   │       ├── gates
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── sbtftfoc
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=44-step=5085.ckpt
+│   │   │       ├── hyang
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── xdf98obt
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=46-step=4888.ckpt
+│   │   │       ├── little
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── u93zs0p6
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=45-step=5566.ckpt
+│   │   │       ├── nexus
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049919
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── ydpycyfw
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=45-step=5290.ckpt
+│   │   │       └── quad
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid2049919
+│   │   │                   └── DAA_sdd_inter
+│   │   │                       └── oin9zgir
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=49-step=6500.ckpt
+│   │   ├── sdd_intra
+│   │   │   └── s064_0.5_128_300
+│   │   │       └── video0
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid1676897
+│   │   │                   └── DAA_sdd_intra
+│   │   │                       └── f0k7zifw
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=46-step=5029.ckpt
+│   │   ├── street
+│   │   │   └── mixed_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid2284585
+│   │   │               └── DAA_street
+│   │   │                   └── nbig7jfd
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=166-step=8350.ckpt
+│   │   ├── tmpd
+│   │   │   └── all_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1264593
+│   │   │               └── tmpd
+│   │   │                   └── s9gctycj
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=189-step=9500.ckpt
+│   │   └── warcraft
+│   │       └── game
+│   │           └── CNNDownSize
+│   │               └── Enconst10.000_pid2233202
+│   │                   └── DAA_warcraft
+│   │                       └── 9abxawsq
+│   │                           └── checkpoints
+│   │                               └── epoch=13-step=8750.ckpt
+│   ├── daa_path
+│   │   └── aug_tmpd
+│   │       └── transpath
+│   │           └── Unet
+│   │               └── Enconst10.000_pid17686
+│   │                   └── DAA_aug_tmpd
+│   │                       └── td3orayd
+│   │                           └── checkpoints
+│   │                               └── epoch=45-step=354752.ckpt
+│   ├── daa_weight
+│   │   └── aug_tmpd
+│   │       └── transpath
+│   │           └── Unet
+│   │               └── Enconst10.000_pid176899
+│   │                   └── DAA_aug_tmpd
+│   │                       └── zbsk9l29
+│   │                           └── checkpoints
+│   │                               └── epoch=38-step=300768.ckpt
+│   ├── neural_astar
+│   │   ├── aug_tmpd
+│   │   │   └── transpath
+│   │   │       └── Unet
+│   │   │           └── Enconst10.000_pid117038
+│   │   │               └── DAA_aug_tmpd
+│   │   │                   └── 0ahvilce
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=45-step=354752.ckpt
+│   │   ├── mpd
+│   │   │   ├── alternating_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── v4ibve97
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=93-step=1222.ckpt
+│   │   │   ├── bugtrap_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── ds39pg9d
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=140-step=1833.ckpt
+│   │   │   ├── forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── 0e1eyh1r
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=193-step=2522.ckpt
+│   │   │   ├── gaps_and_forest_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── v410j56w
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=117-step=1534.ckpt
+│   │   │   ├── mazes_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── gmh28tuy
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=180-step=2353.ckpt
+│   │   │   ├── multiple_bugtraps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── 5pw1su8t
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=191-step=2496.ckpt
+│   │   │   ├── shifting_gaps_032_moore_c8
+│   │   │   │   └── Unet
+│   │   │   │       └── Enconst1.000_pid2343444
+│   │   │   │           └── DAA_mpd
+│   │   │   │               └── wghe8ny5
+│   │   │   │                   └── checkpoints
+│   │   │   │                       └── epoch=206-step=2691.ckpt
+│   │   │   └── single_bugtrap_032_moore_c8
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid2343444
+│   │   │               └── DAA_mpd
+│   │   │                   └── r31oox5g
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=342-step=4459.ckpt
+│   │   ├── pkmn
+│   │   │   └── game
+│   │   │       └── CNNDownSize
+│   │   │           └── Enconst10.000_pid2363072
+│   │   │               └── DAA_pkmn
+│   │   │                   └── 69y5e9f4
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=56-step=10716.ckpt
+│   │   ├── sdd_inter
+│   │   │   └── s064_0.5_128_300
+│   │   │       ├── bookstore
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── g7t4c1ea
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=47-step=5328.ckpt
+│   │   │       ├── coupa
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 6j0lqfot
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=45-step=5796.ckpt
+│   │   │       ├── deathCircle
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── ej54begp
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=49-step=4700.ckpt
+│   │   │       ├── gates
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── xjwsre8v
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=40-step=4633.ckpt
+│   │   │       ├── hyang
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── uzghx6ka
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=49-step=5200.ckpt
+│   │   │       ├── little
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── 08xgdt9o
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=32-step=3993.ckpt
+│   │   │       ├── nexus
+│   │   │       │   └── Unet
+│   │   │       │       └── Enconst10.000_pid2049711
+│   │   │       │           └── DAA_sdd_inter
+│   │   │       │               └── ginjd89h
+│   │   │       │                   └── checkpoints
+│   │   │       │                       └── epoch=25-step=2990.ckpt
+│   │   │       └── quad
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid2049711
+│   │   │                   └── DAA_sdd_inter
+│   │   │                       └── 3t6ruev7
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=18-step=2470.ckpt
+│   │   ├── sdd_intra
+│   │   │   └── s064_0.5_128_300
+│   │   │       └── video0
+│   │   │           └── Unet
+│   │   │               └── Enconst10.000_pid1713115
+│   │   │                   └── DAA_sdd_intra
+│   │   │                       └── mikd5ik0
+│   │   │                           └── checkpoints
+│   │   │                               └── epoch=139-step=14980.ckpt
+│   │   ├── street
+│   │   │   └── mixed_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid2297756
+│   │   │               └── DAA_street
+│   │   │                   └── c9sj4iig
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=174-step=8750.ckpt
+│   │   ├── tmpd
+│   │   │   └── all_064_moore_c16
+│   │   │       └── Unet
+│   │   │           └── Enconst1.000_pid1264932
+│   │   │               └── tmpd
+│   │   │                   └── m88ksxaj
+│   │   │                       └── checkpoints
+│   │   │                           └── epoch=248-step=12450.ckpt
+│   │   └── warcraft
+│   │       └── game
+│   │           └── CNNDownSize
+│   │               └── Enconst10.000_pid2230444
+│   │                   └── DAA_warcraft
+│   │                       └── a9oafof4
+│   │                           └── checkpoints
+│   │                               └── epoch=48-step=30625.ckpt
+│   └── randomwalk_3
+│       ├── aug_tmpd
+│       │   └── transpath
+│       │       └── Unet
+│       │           └── Enconst10.000_pid4335
+│       │               └── DAA_aug_tmpd
+│       │                   └── 7i219nub
+│       │                       └── checkpoints
+│       │                           └── epoch=44-step=347040.ckpt
+│       ├── mpd
+│       │   ├── alternating_gaps_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── 4dl3dxcn
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=394-step=5135.ckpt
+│       │   ├── bugtrap_forest_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── t2vhugun
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=380-step=4953.ckpt
+│       │   ├── forest_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── 4w3d8ltt
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=300-step=3913.ckpt
+│       │   ├── gaps_and_forest_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── xqte2md3
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=169-step=2210.ckpt
+│       │   ├── mazes_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── b39ppyxi
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=378-step=4927.ckpt
+│       │   ├── multiple_bugtraps_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── qs2bfezy
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=355-step=4628.ckpt
+│       │   ├── shifting_gaps_032_moore_c8
+│       │   │   └── Unet
+│       │   │       └── Enconst1.000_pid3103562
+│       │   │           └── DAA_mpd
+│       │   │               └── qh7k65pe
+│       │   │                   └── checkpoints
+│       │   │                       └── epoch=206-step=2691.ckpt
+│       │   └── single_bugtrap_032_moore_c8
+│       │       └── Unet
+│       │           └── Enconst1.000_pid3103562
+│       │               └── DAA_mpd
+│       │                   └── p7cdact6
+│       │                       └── checkpoints
+│       │                           └── epoch=283-step=3692.ckpt
+│       ├── pkmn
+│       │   └── game
+│       │       └── CNNDownSize
+│       │           └── Enconst10.000_pid2521967
+│       │               └── DAA_pkmn
+│       │                   └── awo792xq
+│       │                       └── checkpoints
+│       │                           └── epoch=94-step=17860.ckpt
+│       ├── sdd_inter
+│       │   └── s064_0.5_128_300
+│       │       ├── bookstore
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── vdbk4h44
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=27-step=3108.ckpt
+│       │       ├── coupa
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── f7q370cw
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=46-step=5922.ckpt
+│       │       ├── deathCircle
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── 6fckbked
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=29-step=2820.ckpt
+│       │       ├── gates
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── e6rqsi6t
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=44-step=5085.ckpt
+│       │       ├── hyang
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── wcc6fmad
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=36-step=3848.ckpt
+│       │       ├── little
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── aw0p14rl
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=48-step=5929.ckpt
+│       │       ├── nexus
+│       │       │   └── Unet
+│       │       │       └── Enconst10.000_pid1908739
+│       │       │           └── DAA_sdd_inter
+│       │       │               └── dnq1c64q
+│       │       │                   └── checkpoints
+│       │       │                       └── epoch=26-step=3105.ckpt
+│       │       └── quad
+│       │           └── Unet
+│       │               └── Enconst10.000_pid1908739
+│       │                   └── DAA_sdd_inter
+│       │                       └── fky3e8i7
+│       │                           └── checkpoints
+│       │                               └── epoch=33-step=4420.ckpt
+│       ├── sdd_intra
+│       │   └── s064_0.5_128_300
+│       │       └── video0
+│       │           └── Unet
+│       │               └── Enconst10.000_pid1904457
+│       │                   └── DAA_sdd_intra
+│       │                       └── 5ixp2iyc
+│       │                           └── checkpoints
+│       │                               └── epoch=109-step=11770.ckpt
+│       ├── street
+│       │   └── mixed_064_moore_c16
+│       │       └── Unet
+│       │           └── Enconst1.000_pid1008506
+│       │               └── DAA_street
+│       │                   └── qql7eyfr
+│       │                       └── checkpoints
+│       │                           └── epoch=392-step=19650.ckpt
+│       ├── tmpd
+│       │   └── all_064_moore_c16
+│       │       └── Unet
+│       │           └── Enconst1.000_pid791318
+│       │               └── DAA_tmpd
+│       │                   └── vbijbsfq
+│       │                       └── checkpoints
+│       │                           └── epoch=377-step=18900.ckpt
+│       └── warcraft
+│           └── game
+│               └── CNNDownSize
+│                   └── Enconst10.000_pid2347952
+│                       └── DAA_warcraft
+│                           └── 5hn4fst0
+│                               └── checkpoints
+│                                   └── epoch=99-step=62500.ckpt
+└── transpath
+    └── weights
+        └── focal.pth
+
+743 directories, 114 files
