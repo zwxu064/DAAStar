@@ -27,7 +27,7 @@ pip install -r requirements.txt
 - City and street maps (CSM)
 - Augmented TMPD (Aug-TMPD)
 - Warcraft
-- Pokemon
+- Pokémon
 - SDD-intra
 - SDD-inter
 
