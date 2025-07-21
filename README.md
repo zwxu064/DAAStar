@@ -97,7 +97,7 @@ pip install -r requirements.txt
 - [Theta*](https://github.com/ai-winter/python_motion_planning.git)
 - [Neural A*](https://github.com/omron-sinicx/neural-astar.git)
 - [TransPath](https://github.com/AIRI-Institute/TransPath.git) (only for Aug-TMPD)
-- Randomwalk-$\kappa$ (typically $\kappa=3$)
+- Randomwalk-*k* (typically *k*=3)
 - DAA* series (ours)
   - DAA*-min ($\alpha=1$ in Eq.(5))
   - DAA*-max ($\alpha=0$ in Eq.(5))
