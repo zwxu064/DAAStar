@@ -29,11 +29,11 @@ import pytorch_lightning as pl
 import torch, torch.optim
 import torch.nn as nn
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../..")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
-from src.neural_astar.planner.astar import VanillaAstar
-from metrics_utils import cal_path_angle, generate_path_stack, chamfer_distance, calculate_area_sim
-from viz_utils import save_figure_mixed
+from src.planner.astar import VanillaAstar
+from src.utils.metrics import cal_path_angle, generate_path_stack, chamfer_distance, calculate_area_sim
+from src.utils.viz import save_figure_mixed
 
 # =============================================================================================================
 

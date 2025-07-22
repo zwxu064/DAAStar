@@ -28,12 +28,12 @@ import pytorch_lightning as pl
 sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}")
 
 from copy import deepcopy
-from src.neural_astar.planner import NeuralAstar, MotionPlanning
-from src.neural_astar.utils.training import PlannerModule, set_global_seeds
+from src.planner import NeuralAstar, MotionPlanning
+from src.utils.training import PlannerModule, set_global_seeds
 from pytorch_lightning.callbacks import ModelCheckpoint
-from metrics_utils import parse_args
-from notebook_utils import get_dataset_file_names, get_dataloaders, parse_folder_path
-from notebook_utils import search_checkpoints
+from src.utils.metrics import parse_args
+from src.utils.notebook import get_dataset_file_names, get_dataloaders, parse_folder_path
+from src.utils.notebook import search_checkpoints
 from datetime import datetime
 from pytorch_lightning.loggers import WandbLogger
 from eval import eval

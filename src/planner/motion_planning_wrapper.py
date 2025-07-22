@@ -25,13 +25,13 @@
 import os, sys, torch, time
 import numpy as np
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../..")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from multiprocessing import Pool
-from src.neural_astar.planner.astar import VanillaAstar
+from src.planner.astar import VanillaAstar
 from third_party.python_motion_planning.example.global_example import single_process
-from src.neural_astar.planner.differentiable_astar import AstarOutput
-from metrics_utils import generate_path_stack, cal_path_angle
+from src.planner.differentiable_astar import AstarOutput
+from src.utils.metrics import generate_path_stack, cal_path_angle
 from bresenham import bresenham
 
 # =============================================================================================================

@@ -1,8 +1,3 @@
-"""
-modified code from
-https://github.com/omron-sinicx/neural-astar/blob/minimal/neural_astar/planner/differentiable_astar.py 
-"""
-
 import math, sys
 sys.path.append('../..')
 from dataclasses import dataclass
@@ -11,7 +6,7 @@ from typing import Optional, List
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from metrics_utils import generate_path_stack, cal_path_angle
+from src.utils.metrics import generate_path_stack, cal_path_angle
 
 
 @dataclass

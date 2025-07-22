@@ -25,10 +25,10 @@
 import numpy as np
 import torch, sys, os
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../..")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from pqdict import pqdict
-from src.neural_astar.planner.differentiable_astar import AstarOutput
+from src.planner.differentiable_astar import AstarOutput
 
 # =============================================================================================================
 

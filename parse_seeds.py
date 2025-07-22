@@ -27,8 +27,8 @@ import os, statistics, sys
 sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}")
 
 from glob import glob
-from metrics_utils import parse_args
-from notebook_utils import parse_folder_path
+from src.utils.metrics import parse_args
+from src.utils.notebook import parse_folder_path
 
 # =============================================================================================================
 

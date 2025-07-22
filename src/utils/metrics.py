@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------------------------
-# File: metrics_utils.py
+# File: metrics.py
 # Project: DAA*: Deep Angular A Star for Image-based Path Planning
 # Contributors:
 #     Zhiwei Xu <zwxu064@gmail.com>
@@ -26,7 +26,7 @@ import torch, os, yaml, sys
 import matplotlib.pyplot as plt
 import numpy as np
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from third_party.similarity_measures import similaritymeasures as SM
 from box import Box

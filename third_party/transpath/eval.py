@@ -159,7 +159,7 @@ if __name__ == '__main__':
 
     args.seed = 1234
     args.weights_path = './checkpoints/f/epoch=159-val_loss=0.0030.ckpt'
-    dataset_dir = './datasets/transpath/TransPath_data'
+    dataset_dir = './datasets/transpath'
 
     for split in ['train']:
         print(split)

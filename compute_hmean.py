@@ -29,9 +29,8 @@ import matplotlib.pyplot as plt
 sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}")
 
 from glob import glob
-from metrics_utils import parse_args
-from notebook_utils import parse_folder_path
-from notebook_utils import get_dataset_file_names
+from src.utils.metrics import parse_args
+from src.utils.notebook import parse_folder_path, get_dataset_file_names
 
 # =============================================================================================================
 
@@ -146,7 +145,7 @@ def compute_relative_asim(
         if idx_batch % 100 == 0: print(f"{idx_batch + 1}/{num_samples}.")
         
         # Remove -1 invalid coordinates.
-        # Check calculate_area_sim() in /metrics_utils.py.
+        # Check calculate_area_sim() in src/utils/metrics.py.
         gt_per = reference_stack[idx_batch].astype(np.int32)
         gt_len = (gt_per.sum(1) >= 0).sum()
 

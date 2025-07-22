@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------------------------
-# File: notebook_utils.py
+# File: notebook.py
 # Project: DAA*: Deep Angular A Star for Image-based Path Planning
 # Contributors:
 #     Zhiwei Xu <zwxu064@gmail.com>
@@ -26,19 +26,19 @@ import os, torch, csv, sys
 import numpy as np
 import pandas as pd
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from copy import deepcopy
-from src.neural_astar.utils.training import (
+from src.utils.training import (
     statistics_all_methods,
     load_from_ptl_checkpoint,
     set_global_seeds
 )
-from src.neural_astar.planner import NeuralAstar, MotionPlanning
-from src.neural_astar.utils.data import create_dataloader, create_game_dataloader
+from src.planner import NeuralAstar, MotionPlanning
+from src.utils.data import create_dataloader, create_game_dataloader
 from glob import glob
 from torch.utils.data import DataLoader
-from third_party.TransPath.data.hmaps import GridData
+from third_party.transpath.data.hmaps import GridData
 
 # =============================================================================================================
 

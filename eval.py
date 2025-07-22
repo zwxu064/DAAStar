@@ -27,8 +27,8 @@ import torch, os, sys
 sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}")
 
 from copy import deepcopy
-from notebook_utils import run_statistics_all_methods
-from metrics_utils import parse_args
+from src.utils.notebook import run_statistics_all_methods
+from src.utils.metrics import parse_args
 from compute_hmean import get_methods
 
 # =============================================================================================================

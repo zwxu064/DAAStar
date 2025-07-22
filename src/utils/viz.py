@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------------------------
-# File: viz_utils.py
+# File: viz.py
 # Project: DAA*: Deep Angular A Star for Image-based Path Planning
 # Contributors:
 #     Zhiwei Xu <zwxu064@gmail.com>

@@ -26,11 +26,11 @@ import numpy as np
 import torch, sys, os
 import torch.utils.data as data
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../..")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from PIL import Image
 from torchvision.utils import make_grid
-from src.neural_astar.utils.sdd import SDD
+from src.utils.sdd import SDD
 
 # =============================================================================================================
 

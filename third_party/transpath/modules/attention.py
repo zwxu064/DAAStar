@@ -1,8 +1,8 @@
 from inspect import isfunction
 
 import sys
-sys.path.append('../third_party/TransPath')
-sys.path.append('third_party/TransPath')
+sys.path.append('../third_party/transpath')
+sys.path.append('third_party/transpath')
 
 import torch
 from torch import nn, einsum

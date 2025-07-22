@@ -25,18 +25,18 @@
 import torch, os, sys
 import torch.nn as nn
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../..")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from functools import partial
-from src.neural_astar.planner import encoder
+from src.planner import encoder
 from copy import deepcopy
-from src.neural_astar.planner.differentiable_astar import DifferentiableAstar
-from src.neural_astar.planner.pq_astar import pq_astar
-from third_party.TransPath.modules.planners import DifferentiableDiagAstar
-from third_party.TransPath.modules.encoder import Encoder
-from third_party.TransPath.modules.decoder import Decoder
-from third_party.TransPath.modules.attention import SpatialTransformer
-from third_party.TransPath.modules.pos_emb import PosEmbeds
+from src.planner.differentiable_astar import DifferentiableAstar
+from src.planner.pq_astar import pq_astar
+from third_party.transpath.modules.planners import DifferentiableDiagAstar
+from third_party.transpath.modules.encoder import Encoder
+from third_party.transpath.modules.decoder import Decoder
+from third_party.transpath.modules.attention import SpatialTransformer
+from third_party.transpath.modules.pos_emb import PosEmbeds
 
 # =============================================================================================================
 

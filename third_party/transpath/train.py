@@ -16,12 +16,12 @@ import multiprocessing
 
 def main(mode, run_name, proj_name, batch_size, max_epochs):
     train_data = GridData(
-        path='./datasets/transpath/TransPath_data/train',
+        path='./datasets/transpath/train',
         mode=mode
     ) if mode != 'dem' else DemData(filename='./datasets/transpath/dem_rgb/train')
 
     val_data = GridData(
-        path='./datasets/transpath/TransPath_data/val',
+        path='./datasets/transpath/val',
         mode=mode
     ) if mode != 'dem' else DemData(filename='./datasets/transpath/dem_rgb/val')
 

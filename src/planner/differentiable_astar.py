@@ -26,10 +26,10 @@ import math, sys, os, torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../..")
+sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../..")
 
 from typing import List, NamedTuple, Optional
-from metrics_utils import cal_path_angle
+from src.utils.metrics import cal_path_angle
 
 # =============================================================================================================
 
