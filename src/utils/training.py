@@ -22,7 +22,6 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 # -------------------------------------------------------------------------------------------------------------
 
-
 import random, re, sys, os, shutil
 import numpy as np
 import pytorch_lightning as pl
@@ -173,8 +172,9 @@ def statistics_all_methods(
                             # Keep all inputs as batch*c*h*w
                             save_path = f"{save_dir_idx}/{viz_method}_mixed.png"
 
-                            # Expected is in the original map, the obstacles are 0 value to be excluded from path;
-                            # but aug_tmpd is inverse, so change it for visualization
+                            # Expected is in the original map, the obstacles are 0 value
+                            # to be excluded from path; but aug_tmpd is inverse,
+                            # so change it for visualization
                             if config.dataset_name in ['aug_tmpd']:
                                 viz_map_per = 1 - viz_maps[inner_idx:inner_idx+1]
 
@@ -358,7 +358,10 @@ class PlannerModule(pl.LightningModule):
 
             # Save solution
             method = self.config.motion_planning_lib.method
-            save_path = os.path.join(save_dir, f"{method}.npy" if epoch is None else f"{method}_epoch{epoch}.npy")
+            save_path = os.path.join(
+                save_dir,
+                f"{method}.npy" if epoch is None else f"{method}_epoch{epoch}.npy"
+            )
             np.save(save_path, solutions)
 
     def append_data_solution_batch(
@@ -403,7 +406,8 @@ class PlannerModule(pl.LightningModule):
         opt_trajs = opt_trajs[valid_sample_indices]
         num_samples = map_designs.shape[0]
 
-        if self.config.dataset_name in ['warcraft', 'pkmn', 'aug_tmpd'] and self.config.transpath.enable_gt_ppm:
+        if self.config.dataset_name in ['warcraft', 'pkmn', 'aug_tmpd'] \
+            and self.config.transpath.enable_gt_ppm:
             prob_maps = train_batch['ppm']
         else:
             prob_maps = None
@@ -429,7 +433,10 @@ class PlannerModule(pl.LightningModule):
                 # It is actually PPM, and this is to exclude high prob areas
                 # such that they can be learned through path loss
                 cost_map_mask = cost_maps < 0.5  # only consider the less prob areas
-                cost_map_loss = self.recon_criterion(cost_maps[cost_map_mask], gt_cost_maps[cost_map_mask])
+                cost_map_loss = self.recon_criterion(
+                    cost_maps[cost_map_mask],
+                    gt_cost_maps[cost_map_mask]
+                )
             else:
                 cost_map_loss = self.recon_criterion(cost_maps, gt_cost_maps)
         elif self.config.dataset_name in ['warcraft', 'pkmn']:
@@ -601,7 +608,10 @@ class PlannerModule(pl.LightningModule):
                     # It is actually PPM, and this is to exclude high prob areas
                     # such that they can be learned through path loss
                     cost_map_mask = cost_maps < 0.5  # only consider the less prob areas
-                    cost_map_loss = self.recon_criterion(pred_prob_maps[cost_map_mask], gt_prob_maps[cost_map_mask])
+                    cost_map_loss = self.recon_criterion(
+                        pred_prob_maps[cost_map_mask],
+                        gt_prob_maps[cost_map_mask]
+                    )
                 else:
                     cost_map_loss = self.recon_criterion(pred_prob_maps, gt_prob_maps)
             elif self.config.dataset_name in ['warcraft', 'pkmn']:
@@ -812,11 +822,18 @@ class PlannerModule(pl.LightningModule):
         if torch.is_tensor(rotation_const_value): rotation_const_value = rotation_const_value.item()
         if torch.is_tensor(rotation_weight_value): rotation_weight_value = rotation_weight_value.item()
 
-        print('\n')
-        print(f'===> Check, train g ratio: {self.config.enable_train_g_ratio}, value: {g_ratio_value:.4f}.')
-        print(f'===> Check, train rotation const: {self.config.enable_train_rotation_const}, value: {rotation_const_value:.4f}.')
-        print(f'===> Check, train rotation weight: {self.config.enable_train_rotation_const}, value: {rotation_weight_value:.4f}.')
-        print('\n')
+        print(
+            f'\n===> Check, train g ratio: {self.config.enable_train_g_ratio}' \
+            f', value: {g_ratio_value:.4f}.'
+        )
+        print(
+            f'===> Check, train rotation const: {self.config.enable_train_rotation_const}' \
+            f', value: {rotation_const_value:.4f}.'
+        )
+        print(
+            f'===> Check, train rotation weight: {self.config.enable_train_rotation_const}' \
+            f', value: {rotation_weight_value:.4f}.\n'
+        )
 
         self.log(f"valid/g_ratio", g_ratio_value, on_step=False, on_epoch=True)
         self.log(f"valid/rotation_const", rotation_const_value, on_step=False, on_epoch=True)
