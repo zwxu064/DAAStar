@@ -109,11 +109,31 @@ def add_start_end_mark(
         x_end = corr_ends[i, 1]
 
         if zorder is None:
-            axes.add_patch(Circle((x_start, y_start), radius=2, color='red'))
-            axes.add_patch(Rectangle((x_end.cpu(), y_end.cpu()), width=3, height=3, color='violet'))
+            axes.add_patch(Circle(
+                (x_start, y_start),
+                radius=2,
+                color='red'
+            ))
+            axes.add_patch(Rectangle(
+                (x_end.cpu(), y_end.cpu()),
+                width=3,
+                height=3,
+                color='violet'
+            ))
         else:
-            axes.add_patch(Circle((x_start, y_start), radius=2, color='red', zorder=zorder))
-            axes.add_patch(Rectangle((x_end.cpu(), y_end.cpu()), width=3, height=3, color='violet', zorder=zorder))
+            axes.add_patch(Circle(
+                (x_start, y_start),
+                radius=2,
+                color='red',
+                zorder=zorder
+            ))
+            axes.add_patch(Rectangle(
+                (x_end.cpu(), y_end.cpu()),
+                width=3,
+                height=3,
+                color='violet',
+                zorder=zorder
+            ))
 
     if left_viz_string is not None:
         axes.text(
