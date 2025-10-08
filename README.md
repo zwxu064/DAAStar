@@ -1,6 +1,8 @@
 # **DAA\*: Deep Angular A Star for Image-based Path Planning**
 
 [![arXiv](https://img.shields.io/badge/ICCV-2025-oliver.svg)](https://www.arxiv.org/abs/2507.09305)
+[![video](https://img.shields.io/badge/YouTube-DAA*-8b0000.svg)](https://www.youtube.com/watch?v=_DbkEj3yjoI)
+[![poster](https://img.shields.io/badge/Poster-DAA*-magenta.svg)](assets/poster.png)
 [![python](https://img.shields.io/badge/Python-3.8-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
